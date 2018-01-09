@@ -6,7 +6,7 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___Controller: UIViewController {
     
-    static func initialize() -> ___FILEBASENAMEASIDENTIFIER___Controller {
+    static func create() -> ___FILEBASENAMEASIDENTIFIER___Controller {
         let storyboard = UIStoryboard(name: "___FILEBASENAMEASIDENTIFIER___", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! ___FILEBASENAMEASIDENTIFIER___Controller
         vc.setUp()
