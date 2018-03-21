@@ -7,18 +7,18 @@ import UIKit
 class ___FILEBASENAMEASIDENTIFIER___Controller: UIViewController {
     
     static func create() -> ___FILEBASENAMEASIDENTIFIER___Controller {
-        let storyboard = UIStoryboard(name: "___FILEBASENAMEASIDENTIFIER___<#navigation#>", bundle: nil)
+        let storyboard = UIStoryboard(name: "___FILEBASENAMEASIDENTIFIER___", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! ___FILEBASENAMEASIDENTIFIER___Controller
         vc.setUp()
         return vc
     }
     
     func setUp() {
-        presenter = ___FILEBASENAMEASIDENTIFIER___<#navigation#>Presenter(view: self)
+        presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
     }
     
     // MARK: Properties
-    fileprivate var presenter: ___FILEBASENAMEASIDENTIFIER___<#navigation#>PresenterProtocol!
+    fileprivate var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()

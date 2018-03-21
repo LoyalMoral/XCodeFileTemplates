@@ -4,11 +4,11 @@
 
 import Foundation
 
-protocol ___FILEBASENAMEASIDENTIFIER___<#navigation#>PresenterProtocol {
+protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
     func viewDidLoad()
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___<#navigation#>ViewProtocol: class {
+protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
 }
 
 
