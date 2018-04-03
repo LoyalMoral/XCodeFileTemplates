@@ -4,17 +4,12 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Controller: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
-    static func create() -> ___FILEBASENAMEASIDENTIFIER___Controller {
-        let storyboard = UIStoryboard(name: "___FILEBASENAMEASIDENTIFIER___", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! ___FILEBASENAMEASIDENTIFIER___Controller
-        vc.setUp()
+    static func create() -> ___FILEBASENAMEASIDENTIFIER___ViewController {
+        let vc = UIViewController.viewController(fromStoryboard: "___FILEBASENAMEASIDENTIFIER___") as! ___FILEBASENAMEASIDENTIFIER___ViewController
+        vc.presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: vc)
         return vc
-    }
-    
-    func setUp() {
-        presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
     }
     
     // MARK: Properties
@@ -27,7 +22,7 @@ class ___FILEBASENAMEASIDENTIFIER___Controller: UIViewController {
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___Controller: ___FILEBASENAMEASIDENTIFIER___Protocol {
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
     
 }
 

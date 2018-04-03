@@ -4,7 +4,7 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
+class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
     
     private weak var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
     
