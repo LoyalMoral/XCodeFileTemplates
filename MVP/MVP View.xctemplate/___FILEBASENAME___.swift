@@ -8,8 +8,11 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     static func create() -> ___FILEBASENAMEASIDENTIFIER___ViewController {
         let vc = UIViewController.viewController(fromStoryboard: "___FILEBASENAMEASIDENTIFIER___") as! ___FILEBASENAMEASIDENTIFIER___ViewController
-        vc.presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: vc)
         return vc
+    }
+    
+    func setUp() {
+        presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
     }
     
     // MARK: Properties
@@ -17,7 +20,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad()
+        presenter.viewDidLoad(view: self)
     }
     
 }

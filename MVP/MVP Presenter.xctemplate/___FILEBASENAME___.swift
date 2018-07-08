@@ -8,12 +8,12 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Pre
     
     private weak var view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol?
     
-    init(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
-        self.view = view
+    init() {
+        
     }
     
-    func viewDidLoad() {
-        
+    func viewDidLoad(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
+        self.view = view
     }
 }
 

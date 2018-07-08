@@ -5,7 +5,7 @@
 import Foundation
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {
-    func viewDidLoad()
+    func viewDidLoad(view: ___FILEBASENAMEASIDENTIFIER___ViewProtocol)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
