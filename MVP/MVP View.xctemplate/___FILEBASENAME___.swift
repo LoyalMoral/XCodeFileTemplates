@@ -12,11 +12,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     }
     
     func setUp() {
-        presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
     }
     
     // MARK: Properties
-    fileprivate var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol!
+    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
